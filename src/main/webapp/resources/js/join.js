@@ -39,7 +39,7 @@ $('#cancelbtn').on('click',function () {
 
 
 // verifyme
-$('#requestbtn').on('click',function () {
+$('#reqbtn').on('click',function () {
    if ($('#ph1').val() == '국번' ||
        $('#ph2').val() == '' ||
        $('#ph3').val() == '')

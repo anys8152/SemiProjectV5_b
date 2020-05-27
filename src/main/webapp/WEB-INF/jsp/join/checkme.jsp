@@ -68,8 +68,8 @@
                     </div><!--입력폼-->
                     <div class="row">
                         <div class="col-12 text-center">
-                            <button type="button" id="checkbtn" class="btn btn-primary"><i class="fa fa-check"> 확인하기</i></button>
-                            <button type="button" id="cancelbtn" class="btn btn-danger"><i class="fa fa-remove"> 취소하기</i></button>
+                            <button type="button" id="checkbtn" name="checkbtn" class="btn btn-primary"><i class="fa fa-check"> 확인하기</i></button>
+                            <button type="button" id="cancelbtn" name="cancelbtn" class="btn btn-danger"><i class="fa fa-remove"> 취소하기</i></button>
                         </div>
                     </div> <!--버튼-->
                 </form>
