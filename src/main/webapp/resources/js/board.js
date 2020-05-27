@@ -1,19 +1,20 @@
 
-$('#bdregbtn').on('click', function () {
-    if($('#title').val() == ''){
-        alert('제목을 입력하세요');
+$('#bdregbtn').on('click',function () {
+    if($('#title').val() ==''){
+        alert('제목을 입력하세요!!');
         $('#title').focus();
-    }else if($('#userid').val() == ''){
-        alert('작성자를 입력하세요');
+    }else if($('#userid').val() ==''){
+        alert('작성자를 입력하세요!!');
         $('#userid').focus();
-    }else if($('#contents').val() == ''){
-        alert('본문 내용을 입력하세요');
+    }else if($('#contents').val() ==''){
+        alert('본문을 입력하세요!!');
         $('#contents').focus();
     }
     else {
-        $('#brdfrm').submit();
+        $('#bdfrm').submit();
     }
-}); // 새글등록
+});
+ // 새글등록
 
 
 $('#newbd').on('click', function () {

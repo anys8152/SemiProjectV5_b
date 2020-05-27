@@ -45,7 +45,7 @@
             </div><!-- 본문내용 -->
             <div class="form-group row">
                 <label class="col-form-label col-2 text-right">자동가입방지</label>
-                <img src="../img/google_recaptcha.gif" width="50%" height="50%"
+                <img src="/resources/img/google_recaptcha.gif" width="50%" height="50%"
                      style="">
                 <input type="text" id="captcha" name="captcha"
                        style="margin-left: 195px;"
