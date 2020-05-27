@@ -1,175 +1,99 @@
 <%@page pageEncoding="UTF-8" %>
 
-<!--메인영역 시작-->
-<!--회원가입 - 사이트 약관동의-->
-<div id="main">
-    <div class="margin30">
-        <i class="fa fa-users fa-2x"> 회원가입</i>
-    </div><!--회원가입 타이틀-->
-    <hr>
-
-    <nav aria-label="breadcrumb">
-        <ul class="breadcrumb margin50">
-            <li class="breadcrumb-item active">
-                <button type="button" class="btn btn-success" disabled>이용약관</button>
-            </li>
-            <li class="breadcrumb-item active">
-                <button type="button" class="btn btn-success" disabled>실명확인</button>
-            </li>
-            <li class="breadcrumb-item">
-                <button type="button" class="btn btn-light" disabled>정보입력</button>
-            </li>
-            <li class="breadcrumb-item">
-                <button type="button" class="btn btn-light" disabled>가입완료</button>
-            </li>
-        </ul>
-    </nav><!--breadcrumb-->
-
-
-    <div class="margin30">
-        <h2>가입인증</h2>
-        <small class="text-muted">
-            회원으로 가입하는 방법에는 두 가지 방법이 있습니다. 아래에서 원하는 방법을 선택해주세요.<br>
-            입력하신 정보는 가입완료 전까지 본 사이트에 저장되지 않습니다.
-        </small>
+    <div>
+        <div><i class="fa fa-users fa-2x margin30"> 회원가입</i></div>
         <hr>
-    </div> <!--중간타이틀-->
-
-    <div class="card card-body bg-light margin1050">
-        <h3>회원가입</h3>
-        <form name="checkfrm">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-5">
-                    <div class="form-group row">
-                        <label for="name" class="col-4 col-form-label">이름</label>
-                        <input type="text" id="name" class="form-control col-6">
-                    </div>
-                    <div class="form-group row">
-                        <label for="byear" class="col-4 col-form-label">생년월일</label>
-                        <select id="byear" class="form-control col-3">
-                            <option>년도</option><option>2018</option>
-                            <option>2017</option><option>2016</option>
-                        </select>&nbsp;
-
-                        <select id="bmonth" class="form-control col-2">
-                            <option>월</option><option>01</option>
-                            <option>02</option><option>03</option>
-                            <option>04</option><option>05</option>
-                            <option>06</option><option>07</option>
-                            <option>08</option><option>09</option>
-                            <option>10</option><option>11</option><option>12</option>
-                        </select>&nbsp;
-
-                        <select id="bday" class="form-control col-2">
-                            <option>일</option><option>31</option>
-                            <option>15</option><option>03</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="col-4">성별</label>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="male" name="gender"
-                                   class="custom-control-input" value="m">
-                            <label for="male" class="custom-control-label">남자</label>
-                        </div>
-                        &nbsp;&nbsp;&nbsp;
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="female" name="gender"
-                                   class="custom-control-input" value="f">
-                            <label for="female" class="custom-control-label">여자</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <ul>
-                        <li>주민등록번호 입력 없이 전화번호로 회원가입이 가능합니다.</li>
-                        <li>이름, 생년월일과 성별은 <span style="color: red">추후 변경할 수 없습니다.</span></li>
-                        <li><span style="color: red">휴대폰 가입인증</span>을 하셔야 공개 게시판 이용이 가능합니다.</li>
-                    </ul>
-                </div>
-                <div class="col"></div>
-            </div><!--입력폼-->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <button type="button" id="checkbtn"
-                            class="btn btn-primary">
-                        <i class="fa fa-check"> 확인하기</i>
-                    </button>
-
-                    <button type="button" id="cancelbtn"
-                            class="btn btn-danger">
-                        <i class="fa fa-remove"> 취소하기</i>
-                    </button>
-                </div>
-            </div><!--버튼-->
-        </form>
-    </div>
-
-
-
-
-    <div class="card card-body bg-light mgnpdg15">
-        <h3>실명확인 회원가입</h3>
-        <form>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-5">
-                    <div class="form-group row margin30">
-                        <label for="name2" class="col-4 col-form-label">이름</label>
-                        <input type="text" id="name2"
-                               class="form-check col-6" disabled>
-                    </div>
-                    <div class="form-group row">
-                        <label for="jumin1" class="col-4 col-form-label">주민번호</label>
-                        <input type="text" id="jumin1"
-                               class="form-check col-3" disabled>&nbsp;
-                        <label class="col-form-label">&ndash;</label>&nbsp;
-                        <input type="text" id="jumin2"
-                               class="form-check col-3" disabled>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-4"></label>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" id="usejm"
-                                   class="custom-control-input" disabled>
-                            <label for="usejm" class="custom-control-label">
-                                주민등록번호 처리에 동의합니다.
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <ul>
-                        <li>실명확인 회원가입시 공개 게시판 이용이 가능합니다.</li>
-                        <li>타인의 주민등록번호를 임의로 사용하면
-                            <span style="color: red">'주민등록법에 의해 3년 이하의 징역 또는 1천만원
-                                    이하의 벌금</span>이 부과될 수 있습니다.</li>
-                        <li>입력하신 주민등록번호는 <span style="color: red">별도 저장되지 않으며,
-                                신용평가기관을 통한 실명확인용</span>으로만 이용됩니다.</li>
-                        <li>개인정보보호법에 따라 <span style="color: red">이용 동의</span>를 받습니다.</li>
-                    </ul>
-                </div>
-                <div class="col"></div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href=""><button type="button" class="btn btn-success">이용약관</button></a></li>
+                <li class="breadcrumb-item"><a href=""><button type="button" class="btn btn-success">실명확인</button></a></li>
+                <li class="breadcrumb-item"><a href=""><button type="button" class="btn btn-light" disabled>정보입력</button></a></li>
+                <li class="breadcrumb-item"><a href=""><button type="button" class="btn btn-light " disabled>가입완료</button></a></li>
+            </ol>
+        </nav>
+        <div class="main">
+            <div class="margin30">
+                <h2>가입인증</h2>
+                <small class="text-muted">안전한 회원 가입을 위해 휴대폰 인증을 진행해 주세요</small>
+                <hr>
             </div>
-            <div class="row"></div>
+            <div class="alert alert-danger margin1050" role="alert">
+                <ul style="margin-bottom: -3px;">
+                    <li class="list-inline" style="margin-left: -20px;"><span class="badge badge-danger">중요한내용!</span></li>
+                    <li>극소수 익명 사용자의 대량가입으로 인한 피해를 방지 하기 위해여 가입인증을 시행하고 있습니다.</li>
+                    <li>통신사의 사정으로 휴대폰 인증을 위한 메시지가 지연 발송될수도 있습니다.</li>
+                </ul>
+            </div>
+            <div class="card card-body bg-light margin1050">
+                <h3><span class="badge badge-pill badge-danger">1</span>휴대폰 정보</h3>
+                <form>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-5">
+                            <div class="form-group row text-right margin20">
+                                <label for="hp1" class="col-4 col-form-label">휴대폰 번호</label>
+                                <select id="hp1" class="col-3 form-control">
+                                    <option>국번</option>
+                                    <option>010</option>
+                                    <option>011</option>
+                                    <option>019</option>
+                                </select>
+                                <label class="form-check-label">&nbsp;&ndash;&nbsp;</label>
+                                <input type="text" id="hp2" class="form-control col-2">
+                                <label class="form-check-label">&nbsp;&ndash;&nbsp;</label>
+                                <input type="text" id="hp3" class="form-control col-2">
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <ul>
+                                <li>메세지 수신 가능한 휴대폰으로 인증번호를 받을 수 있습니다.</li>
+                                <li>휴대폰번호 입력 후 '인증번호 요청하기' 버튼을 눌러 주세요</li>
+                            </ul>
+                        </div>
+                        <div class="col"></div>
+                    </div><!--입력폼-->
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button type="button" id="reqbtn" class="btn btn-warning"><i class="fa fa-check" style="color: white"> 인증번호 요청하기</i></button>
 
+                        </div>
+                    </div> <!--버튼-->
+                    <input type="hidden" id="name" value="${param.name}">
+                </form>
 
-        </form>
-        <div class="row">
-            <div class="col-12 text-center">
-                <button type="button" id="okbtn"
-                        class="btn btn-primary">
-                    <i class="fa fa-check"> 확인하기</i>
-                </button>
+            </div>
+            <div class="card card-body bg-light mgnpdg15">
+                <h3><span class="badge badge-pill badge-danger">2</span>휴대폰 가입인증</h3>
+                <form>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-5">
+                            <div class="form-group row margin20">
+                                <label for="vcode" class="col-4 col-form-label">인증번호 입력</label>
+                                <input type="text" id="vcode" class="form-control col-4" disabled>
+                            </div>
 
-                <button type="button" id="nobtn"
-                        class="btn btn-danger">
-                    <i class="fa fa-remove"> 취소하기</i>
-                </button>
+                        </div>
+                        <div class="col-5">
+                            <ul>
+                                <li>휴대폰으로 반은 인증번호 입력 후 확인을 눌러주세요</li>
+                                <li>안중번호가 도착하지 않는다면 재인증을 시도해 주세요</li>
+                                <li>재인증 실패시 통신사에 문의하시기 바랍니다.</li>
+                                <li>통신사 문의 전 스팸문자함, 메세지함 용량 초과 여부, 차단설정을 확인해주십시오</li>
+                            </ul>
+                        </div>
+                        <div class="col"></div>
+                    </div><!--입력폼-->
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-check"> 확인하기</i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa fa-remove"> 취소하기</i></button>
+                        </div>
+                    </div> <!--버튼-->
+                </form>
             </div>
         </div>
     </div>
-</div>
-<!--메인영역 끝-->
+
+
+
