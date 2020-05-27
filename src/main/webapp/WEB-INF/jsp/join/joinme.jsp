@@ -29,8 +29,7 @@
                             <label for="name"
                                    class="col-2 col-form-label">이름</label>
                             <input type="text" class="form-control col-2  border-info"
-                                   name="name" id="name" value="${param.name}"
-                                    readonly>
+                                   name="name" id="name" value="${param.name}">
                             <%-- id = 스타일시트 name = jsp로 전송 하기 위해 사용 --%>
                         </div><!-- 이름 -->
 
