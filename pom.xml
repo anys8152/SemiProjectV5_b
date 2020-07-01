@@ -23,7 +23,7 @@
 
     <!-- loggin 버젼을 속성으로 설정 -->
     <slf4j.version>1.7.30</slf4j.version>
-    <log4j.version>2.13.0</log4j.version>
+    <log4j.version>2.13.3</log4j.version>
 
   </properties>
 
