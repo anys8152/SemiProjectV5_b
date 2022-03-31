@@ -19,7 +19,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
 
     <!-- 스프링 버젼을 속성으로 설정 -->
-    <spring.version>4.3.26.RELEASE</spring.version>
+    <spring.version>5.3.18</spring.version>
 
     <!-- loggin 버젼을 속성으로 설정 -->
     <slf4j.version>1.7.30</slf4j.version>
